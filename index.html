@@ -16,6 +16,18 @@
         sayGoodbye("Ridho");
 
         console.log(name);
+
+        import { name2 } from "./scripts/variable.js";
+        console.log(name2);
+
+        import { Orang } from "./scripts/class.js";
+        const kenalan = new Orang("Ridho");
+        kenalan.sayHello("Dicky");
+
+        import { sayMyName, Act, berubah, gagalberubah } from "./scripts/multi-export.js";
+        sayMyName("Kaname Madoka");
+        console.log(berubah);
+        console.log(gagalberubah);
     </script>
 </body>
 </html>
