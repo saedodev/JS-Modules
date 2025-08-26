@@ -49,6 +49,15 @@
         const output = new math(9, 3);
         output.hasil();
 
+        import * as libraryObject from "./scripts/module-object.js";
+        console.log(libraryObject.firstName);
+        console.log(libraryObject.surName);
+        console.log(libraryObject.lastName);
+
+        console.log(libraryObject.nambah(3, 5));
+
+        const Pegawai = new libraryObject.Pegawai();
+        Pegawai.hello();
     </script>
 </body>
 </html>
