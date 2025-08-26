@@ -58,6 +58,16 @@
 
         const Pegawai = new libraryObject.Pegawai();
         Pegawai.hello();
+
+        import {Orang as mahoushoujo, name2 as namakedua, sayMyName as panggilAku, Act as action, berubah as transform, gagalberubah as failtransform} from "./scripts/aggregate.js";
+        const kenalan2 = new Orang("Madoka");
+        kenalan2.sayHello("Sayaka");
+
+        console.log(namakedua);
+
+        panggilAku("Akemi Homura");
+        console.log(transform);
+        console.log(failtransform);
     </script>
 </body>
 </html>
