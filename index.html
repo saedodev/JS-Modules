@@ -33,6 +33,22 @@
         nama("Kinomoto Sakura");
         console.log(henshin);
         console.log(gajadihenshin);
+
+        import operasiTambah from "./scripts/default-tambah.js";
+        console.log(operasiTambah(1, 2));
+
+        import {default as namaDefault} from "./scripts/default-variable.js";
+        console.log(namaDefault);
+
+        import {default as operasiKurang} from "./scripts/default-class.js";
+        const kurang = new operasiKurang(6, 3);
+        kurang.hasil();
+
+        import {default as math, title} from "./scripts/default-and-math.js";
+        console.log(title);
+        const output = new math(9, 3);
+        output.hasil();
+
     </script>
 </body>
 </html>
